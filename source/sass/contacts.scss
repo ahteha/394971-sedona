@@ -1,0 +1,22 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  outline: 1px solid yellow;
+}
+
+.contacts__title {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.contacts__button {
+  font-size: 21px;
+  line-height: 26px;
+}
+.contacts__map {
+
+}

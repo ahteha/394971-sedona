@@ -1,0 +1,28 @@
+.inner-list {
+  background-color: white;
+  align-items: left;
+  text-align: left;
+}
+
+.inner-list__item {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  outline: 1px solid red;
+}
+
+.inner-list__title--1:before {
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 450px;
+  height: 45px;
+  background-image: url("../img/icon-burger.svg");
+}
+
+.inner-list__title,
+.inner-list__text {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}

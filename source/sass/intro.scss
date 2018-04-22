@@ -1,0 +1,27 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  outline: 1px solid yellow;
+}
+
+.intro__banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  margin-bottom: 45px;
+}
+
+.intro__content-image {
+  margin-top: 90px;
+  margin-bottom: 60px;
+}
+
+.intro__content-image-small {
+  margin-top: 53px;
+  margin-bottom: 40px;
+}
+
+
