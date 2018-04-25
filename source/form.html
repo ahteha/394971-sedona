@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="https://fonts.googleapis.com/" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
@@ -28,7 +27,7 @@
           </li>
         </ul>
       </nav>
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Город Седона">
       </a>
       <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -38,8 +37,7 @@
 
       <section class="intro">
         <div class="intro__banner">
-          <img class="intro__content-image-small" src="img/text-sedona.svg" width="280" height="auto" alt="Welcome to Sedona">
-          <img src="img/bg-intro-triangle-mobile.svg" width="100%" height="auto">
+          <img class="intro__content-image" src="img/text-sedona.svg" width="280" height="auto" alt="Welcome to Sedona">
         </div>
         <h1 class="text text--title">Оставьте свой отзыв</h1>
         <p class="text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных Вами достопримечательностях</p>
@@ -49,7 +47,7 @@
         <form class="feedback-form__body" method="get" action="https://echo.htmlacademy.ru">
 
           <fieldset class="feedback-form__fieldset">
-            <legend class="feedback-form__legend text--title">Представьтесь:</legend>
+            <legend class="feedback-form__legend text text--title">Представьтесь:</legend>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
                 <label class="feedback-form__label" for="name">Имя*:</label>
@@ -67,7 +65,7 @@
           </fieldset>
 
           <fieldset class="feedback-form__fieldset">
-            <legend class="feedback-form__legend">Контактная информация:</legend>
+            <legend class="feedback-form__legend text text--title">Контактная информация:</legend>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
                 <label class="feedback-form__label" for="phone">Контактный телефон*:</label>
@@ -81,7 +79,7 @@
           </fieldset>
 
           <fieldset class="feedback-form__fieldset">
-            <legend class="feedback-form__legend">Ваше общее впечатление:</legend>
+            <legend class="feedback-form__legend text text--title">Ваше общее впечатление:</legend>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
                 <input class="feedback-form__radio-input" type="radio" name="radio" id="good" checked>
@@ -99,7 +97,7 @@
           </fieldset>
 
           <fieldset class="feedback-form__fieldset">
-            <legend class="feedback-form__legend">Посещенные достопримечательности:</legend>
+            <legend class="feedback-form__legend text text--title">Посещенные достопримечательности:</legend>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
                 <input class="feedback-form__checkbox-input" type="checkbox" name="bridge" id="bridge" checked>
@@ -121,11 +119,13 @@
           </fieldset>
 
           <fieldset class="feedback-form__fieldset">
-            <legend class="feedback-form__legend">Опишите свои эмоции</legend>
+            <legend class="feedback-form__legend text text--title">Опишите свои эмоции</legend>
             <textarea class="feedback-form__textarea" name="message" id="message" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
 
-          <button class="feedback-form__send button" type="submit">Отправить отзыв</button>
+          <button class="button" type="submit">
+            <span class="feedback-form__button">Отправить отзыв</span>
+          </button>
         </form>
       </section>
     </main>
@@ -161,11 +161,12 @@
               </a>
             </li>
           </ul>
+        </div>
 
         <div class="page-footer__copyright">
-          <p class="page-footer__copyright-text">Разраотано</p>
+          <p class="page-footer__copyright-text">Разработано</p>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="page-footer__copyright-link-img" src="img/htmlacademy.svg" width="27" height="34" alt="html academy">
+            <img class="page-footer__copyright-image" src="img/htmlacademy.svg" width="27" height="34" alt="html academy">
           </a>
         </div>
       </div>

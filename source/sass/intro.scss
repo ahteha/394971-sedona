@@ -10,6 +10,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 320px;
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
   background-image: url("../img/bg-back-mobile@1x.jpg");
   margin-bottom: 45px;
 }
@@ -18,10 +20,3 @@
   margin-top: 90px;
   margin-bottom: 60px;
 }
-
-.intro__content-image-small {
-  margin-top: 53px;
-  margin-bottom: 40px;
-}
-
-

@@ -26,14 +26,11 @@
   width: 100%;
 }
 
-.advantages__item--1,
-.advantages__item--2 {
+.advantages__item--blue {
   background-color: $blue;
-
+  background-image: url("../img/bg-triangle.svg") no-repeat;
 }
 
-.advantages__item--3,
-.advantages__item--4,
-.advantages__item--5 {
+.advantages__item--grey {
   background-color: $grey;
 }
