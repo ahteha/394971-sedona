@@ -36,19 +36,23 @@
     <main class="page-main">
       <section class="intro">
         <div class="intro__banner">
-          <img class="intro__content-image" src="img/text-sedona-index.svg" width="280" height="auto" alt="Welcome to Sedona">
+          <img class="intro__image" src="img/text-sedona-index.svg" width="280" height="auto" alt="Welcome to Sedona">
         </div>
-        <h1 class="text text--title">Седона небольшой<br> городок в Аризоне, заслуживающий большего!</h1>
-        <p class="text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <div class="intro__content">
+          <h1 class="text text--title intro__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p class="text intro__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </div>
       </section>
 
       <section class="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="advantages__list">
-            <li class="advantages__item advantages__item--blue">
-              <h3 class="text text--title text--title-white">Настоящий городок</h3>
-              <p class="text text--white">-№1-</p>
-              <p class="text text--white">Седона не атракцион для туристов, там течет своя жизнь</p>
+            <li class="advantages__item">
+              <div class="advantages__town">
+                <h3 class="text text--title advantages__town-title">Настоящий городок</h3>
+                <p class="text advantages__town-text">— №1 —</p>
+                <p class="text advantages__town-text">Седона не атракцион для туристов, там течет своя жизнь</p>
+              </div>
               <img class="advantages__photo" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фотография города">
               <ul class="advantages__list inner-list">
                 <li class="inner-list__item">
@@ -99,26 +103,34 @@
                 </li>
               </ul>
             </li>
-            <li class="advantages__item advantages__item--blue">
-              <h3 class="text text--title text--title-white">Там есть мост Дьявола</h3>
-              <p class="text text--white">-№2-</p>
-              <p class="text text--white">Да, по нему можно пройтись если Вы осмелитесь, конечно</p>
+            <li class="advantages__item">
+              <div class="advantages__bridge">
+                <h3 class="text text--title advantages__bridge-title">Там есть мост Дьявола</h3>
+                <p class="text advantages__bridge-text">-№2-</p>
+                <p class="text advantages__bridge-text">Да, по нему можно пройтись если Вы осмелитесь, конечно</p>
+              </div>
               <img class="advantages__photo" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Фотография моста">
             </li>
-            <li class="advantages__item advantages__item--grey">
-              <h3 class="text text--title">Небольшая площадь</h3>
-              <p class="text">-№3-</p>
-              <p class="text">Все интересные места находятся очень близко</p>
+            <li class="advantages__item">
+              <div class="advantages__grey">
+                <h3 class="text text--title advantages__grey-title">Небольшая площадь</h3>
+                <p class="text advantages__grey-text">-№3-</p>
+                <p class="text advantages__grey-text">Все интересные места находятся очень близко</p>
+              </div>
             </li>
-            <li class="advantages__item advantages__item--grey">
-              <h3 class="text text--title">Красивая дорога</h3>
-              <p class="text">-№4-</p>
-              <p class="text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <li class="advantages__item">
+              <div class="advantages__grey">
+                <h3 class="text text--title advantages__grey-title">Красивая дорога</h3>
+                <p class="text advantages__grey-text">-№4-</p>
+                <p class="text advantages__grey-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
             </li>
-            <li class="advantages__item advantages__item--grey">
-              <h3 class="text text--title">Мало туристов</h3>
-              <p class="text">-№5-</p>
-              <p class="text">Большинство едет в Гранд Каньон и толпится там</p>
+            <li class="advantages__item">
+              <div class="advantages__grey">
+                <h3 class="text text--title advantages__grey-title">Мало туристов</h3>
+                <p class="text advantages__grey-text">-№5-</p>
+                <p class="text advantages__grey-text">Большинство едет в Гранд Каньон и толпится там</p>
+              </div>
             </li>
           </ul>
 
@@ -126,7 +138,7 @@
 
       <section class="contacts">
         <h2 class="text text--title contacts__title">Заинтересовались?</h2>
-        <p class="text">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+        <p class="text contacts__text">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
         <a class="button" href="#">
           <span class="contacts__button">Найти гостиницу</span>
         </a>
@@ -136,7 +148,7 @@
 
     <footer class="page-footer">
 
-        <h2 class="text text--title">#visitsedona</h2>
+        <h2 class="text text--title page-footer__title">#visitsedona</h2>
         <div class="page-footer__social social">
           <ul class="social__list">
 
@@ -172,9 +184,9 @@
         </div>
 
         <div class="page-footer__copyright">
-          <p class="page-footer__copyright-text">Разработано</p>
+          <p class="text page-footer__copyright-text">Разработано</p>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="page-footer__copyright-image" src="img/htmlacademy.svg" width="27" height="34" alt="html academy">
+            <img class="page-footer__copyright-image" src="img/htmlacademy.svg" width="40" height="auto" alt="html academy">
           </a>
         </div>
       </div>

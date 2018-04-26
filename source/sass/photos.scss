@@ -28,14 +28,16 @@
 }
 
 .photos__link {
-  width: 280px;
   margin-top: 25px;
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 20px;
   outline: 1px solid red;
 }
 
 .photos__title {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 24px;
   text-align: left;

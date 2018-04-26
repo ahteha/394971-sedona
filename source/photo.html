@@ -36,10 +36,12 @@
     <main class="page-main">
       <section class="intro">
         <div class="intro__banner">
-          <img class="intro__content-image" src="img/text-sedona.svg" width="280" height="auto" alt="Welcome to Sedona">
+          <img class="intro__image" src="img/text-sedona.svg" width="230" height="auto" alt="Welcome to Sedona">
         </div>
-        <h1 class="text text--title">Фото и видео</h1>
-        <p class="text">Не можете решиться на петушествие из-за курса? Фотографии помогут Вам забыть о политике и экономике</p>
+        <div class="intro__content">
+          <h1 class="text text--title intro__title">Фото и видео</h1>
+          <p class="text intro__text">Не можете решиться на петушествие из-за курса? Фотографии помогут Вам забыть о политике и экономике</p>
+        </div>
       </section>
 
       <section class="photos">
@@ -47,7 +49,7 @@
         <ul class="photos__list">
           <li class="photos__item">
             <a class="photos__link" href="#">
-              <img class="photos__image" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Фотография">
+              <img class="photos__image" src="img/photo-sunset-mobile@1x.jpg" width="280" height="auto" alt="Фотография">
             </a>
             <h3 class="text text--title photos__title">Неродные просторы</h3>
             <p class="text photos__text">Автор фото: Борис</p>
@@ -122,23 +124,33 @@
             </b>
           </li>
         </ul>
-        <h2 class="text text--title">Вы еще сомневаетесь?</h2>
-        <p class="text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <img clss="photos__image" src="img/video-mobile@1x.jpg">
-        тут будет видео?
+      </section>
+      <section class="video">
+        <div class="video__content">
+          <h2 class="text text--title video__title">Вы еще сомневаетесь?</h2>
+          <p class="text video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </div>
+        <div class="video__player">
+          <img clss="video__image" src="img/video-mobile@1x.jpg">
+          <img clss="video__controls" src="#">
+        </div>
       </section>
 
       <footer class="page-footer">
 
-        <h2 class="text text--title">#visitsedona</h2>
+        <h2 class="text text--title page-footer__title">#visitsedona</h2>
         <div class="page-footer__social social">
           <ul class="social__list">
 
             <li class="social__item">
-              <a class="social__link" href="#">
+              <a class="social__link social__link--twitter" href="#">
                 <span class="visually-hidden">Седона Twitter</span>
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve"><g id="W6EeEF_1_"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
-                </g></g>
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                  <g id="W6EeEF_1_">
+                    <g>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+                    </g>
+                  </g>
                 </svg>
               </a>
             </li>
@@ -162,9 +174,9 @@
         </div>
 
         <div class="page-footer__copyright">
-          <p class="page-footer__copyright-text">Разработано</p>
+          <p class="text page-footer__copyright-text">Разработано</p>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="page-footer__copyright-image" src="img/htmlacademy.svg" width="27" height="34" alt="html academy">
+            <img class="page-footer__copyright-image" src="img/htmlacademy.svg" width="40" height="auto" alt="html academy">
           </a>
         </div>
       </div>

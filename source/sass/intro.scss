@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
-  outline: 1px solid yellow;
 }
 
 .intro__banner {
@@ -11,12 +9,36 @@
   flex-direction: column;
   align-items: center;
   width: 320px;
-  background-image: url("../img/bg-intro-triangle-mobile.svg");
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  margin-bottom: 45px;
+  background: url("../img/bg-back-mobile@1x.jpg");
+  outline: 1px solid blue;
 }
 
-.intro__content-image {
-  margin-top: 90px;
-  margin-bottom: 60px;
+.intro__image {
+  margin-top: 88px;
+  margin-bottom: 85px;
+  outline: 1px solid yellow;
+}
+
+.intro__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 225px;
+  width: 100%;
+  outline: 1px solid yellow;
+}
+
+.intro__title {
+  margin: 0;
+  padding: 0;
+  line-height: 26px;
+  width: 260px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.intro__text {
+  margin: 0;
+  padding: 0;
+  width: 260px;
 }
