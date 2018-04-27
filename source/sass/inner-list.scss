@@ -1,0 +1,43 @@
+.inner-list {
+  background-color: white;
+  align-items: left;
+  text-align: left;
+  min-height: 390px;
+  padding-top: 25px;
+}
+
+.inner-list__item {
+  margin: 0 20px;
+  display: flex;
+  flex-wrap: no-wrap;
+  margin-bottom: 18px;
+  outline: 1px solid yellow;
+}
+
+.inner-list__icon {
+  width: 40px;
+  height: 40px;
+  fill: $blue;
+  outline: 1px solid blue;
+}
+
+.inner-list__content {
+  margin-left: 10px;
+  max-width: 210px;
+  outline: 1px solid blue;
+}
+
+.inner-list__title {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.inner-list__text {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  line-height: 21px;
+}

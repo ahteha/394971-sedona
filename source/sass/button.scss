@@ -1,0 +1,21 @@
+.button {
+  width: 280px;
+  margin: 0 auto;
+  padding: 15px 0;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background-color: $blue;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: $blue-hover;
+}
+
+.button:active {
+  background-color: $blue-down;
+}
