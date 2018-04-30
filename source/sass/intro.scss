@@ -42,3 +42,35 @@
   padding: 0;
   width: 260px;
 }
+
+@media (min-width: $tablet-width) {
+  .intro__banner {
+    width: 768px;
+    min-height: 520px;
+  }
+
+  .intro__image {
+    outline: 1px solid yellow;
+  }
+
+  .intro__content {
+    min-height: 200px;
+    width: 100%;
+    outline: 1px solid yellow;
+  }
+
+  .intro__title {
+    font-size: 21px;
+    width: 450px;
+  }
+
+  .intro__text {
+    width: 500px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__banner {
+    width: 1200px;
+  }
+}

@@ -14,3 +14,38 @@
   left: 110px;
   top: 223px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: 768px;
+    min-height: 56px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    left: 335px;
+    top: 0px;
+    height: 85px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1200px;
+    min-height: 56px;
+    margin: 0 auto;
+    position: relative;
+    outline: 1px solid green;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    left: 505px;
+    top: 0px;
+    height: 96px;
+    width: 188px;
+    background-color: $blue
+  }
+}

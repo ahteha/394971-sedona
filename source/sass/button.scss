@@ -1,14 +1,12 @@
 .button {
-  width: 280px;
-  margin: 0 auto;
-  padding: 15px 0;
+  display: block;
+  height: 45px;
+  padding-top: 15px;
+  font-size: 21px;
+  text-align: center;
   font-weight: bold;
   color: white;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
   background-color: $blue;
-  border: none;
 }
 
 .button:hover,
@@ -18,4 +16,5 @@
 
 .button:active {
   background-color: $blue-down;
+  opacity: 0.3;
 }

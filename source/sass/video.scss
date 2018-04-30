@@ -43,10 +43,71 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   margin-bottom: 75px;
 }
 
 .video__image {
   width: 320px;
   height: auto;
+}
+
+.video__controls {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 160px;
+  background-color: black;
+  width: 280px;
+  min-height: 95px;
+  opacity: 0.6;
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    width: 648px;
+  }
+
+  .video__content {
+    min-height: 246px;
+  }
+
+  .video__title {
+    font-size: 30px;
+    width: 370px;
+  }
+
+  .video__text {
+    width: 430px;
+  }
+
+  .video__player {
+    width: 648px;
+    min-height: 500px;
+  }
+
+  .video__image {
+    width: 100%;
+  }
+
+  .video__controls {
+    top: 312px;
+    width: 648px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    width: 800px;
+  }
+
+  .video__player {
+    width: 800px;
+    min-height: 500px;
+  }
+
+  .video__controls {
+    top: 410px;
+    width: 800px;
+  }
 }

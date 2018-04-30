@@ -1,6 +1,4 @@
 .advantages {
-  display: flex;
-  flex-direction: column;
   width: 320px;
   margin: 0 auto;
   position: relative;
@@ -19,14 +17,12 @@
 .advantages__item {
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
 
 .advantages__town {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   background-color: $blue;
   min-height: 210px;
   outline: 1px solid yellow;
@@ -45,7 +41,7 @@
   margin: 0;
   padding: 0;
   color: white;
-  max-width: 270px;
+  width: 270px;
   margin-bottom: 8px;
 }
 
@@ -58,7 +54,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   min-height: 190px;
   background-color: $blue;
   outline: 1px solid yellow;
@@ -78,7 +73,7 @@
   padding: 0;
   line-height: 21px;
   color: white;
-  max-width: 270px;
+  width: 270px;
   margin-bottom: 15px;
 }
 
@@ -86,7 +81,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   min-height: 168px;
   background-color: $grey;
 }
@@ -104,6 +98,117 @@
   margin: 0;
   padding: 0;
   line-height: 21px;
-  max-width: 250px;
+  width: 250px;
   margin-bottom: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    width: 768px;
+  }
+
+  .advantages__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .advantages__town {
+    width: 256px;
+  }
+
+  .advantages__town-title {
+    width: 140px;
+  }
+
+  .advantages__town-text {
+    width: 170px;
+  }
+
+  .advantages__photo {
+    width: 512px;
+    height: auto;
+  }
+
+  .advantages__bridge {
+    order: 2;
+    width: 256px;
+    min-height: 210px;
+  }
+
+  .advantages__bridge-title {
+    width: 140px;
+  }
+
+  .advantages__bridge-text {
+    width: 170px;
+  }
+
+  .advantages__grey {
+    width: 256px;
+    min-height: 256px;
+  }
+
+  .advantages__grey-title {
+    width: 135px;
+  }
+
+  .advantages__grey-text {
+    width: 165px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    width: 1200px;
+  }
+
+  .advantages__town {
+    width: 400px;
+    min-height: 260px;
+  }
+
+  .advantages__town-title {
+    width: 160px;
+  }
+
+  .advantages__town-text {
+    width: 275px;
+  }
+
+  .advantages__photo {
+    width: 800px;
+    height: auto;
+  }
+
+  .advantages__bridge {
+    order: 2;
+    width: 400px;
+    min-height: 260px;
+  }
+
+  .advantages__bridge-title {
+    width: 160px;
+  }
+
+  .advantages__bridge-text {
+    width: 230px;
+  }
+
+  .advantages__grey {
+    width: 400px;
+  }
+
+  .advantages__grey-title {
+    width: 135px;
+  }
+
+  .advantages__grey-text {
+    width: 300px;
+  }
 }

@@ -18,7 +18,6 @@
 
 .page-footer__social {
   width: 150px;
-  outline: 1px solid yellow;
   margin-bottom: 40px;
 }
 
@@ -42,4 +41,26 @@
   fill: black;
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    width: 648px;
+    justify-content: space-between;
+  }
+
+  .page-footer__title {
+    margin-top: 45px;
+  }
+
+  .page-footer__social {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 960px;
+  }
 }

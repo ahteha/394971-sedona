@@ -1,6 +1,4 @@
 .main-nav {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   position: relative;
 }
@@ -8,6 +6,8 @@
 .main-nav__list {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   list-style: none;
   text-align: center;
@@ -48,4 +48,60 @@
   position: absolute;
   left: 230px;
   top: 230px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    flex-direction: row;
+    justify-content: space-around;
+    outline: 2px solid yellow;
+  }
+
+  .main-nav__item {
+    background-color: white;
+    outline: 2px solid red;
+  }
+
+  .main-nav__item:hover,
+  .main-nav__item:focus {
+    background-color: white;
+  }
+
+  .main-nav__item:active {
+    background-color: white;
+  }
+
+  .main-nav__link {
+    font-size: 14px;
+    line-height: 26px;
+    padding-top: 13px;
+    padding-bottom: 5px;
+    width: 100%;
+    min-height: 37px;
+    color: black;
+    font-weight: bold;
+  }
+
+  .main-nav__link:hover,
+  .main-nav__link:focus {
+    color: $blue;
+  }
+
+  .main-nav__link:active {
+    opacity: 0.3;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    outline: 2px solid green;
+  }
+
+  .main-nav__item {
+    outline: 2px solid blue;
+  }
 }

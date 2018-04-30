@@ -48,7 +48,7 @@
       <section class="feedback-form">
         <form class="feedback-form__body" method="get" action="https://echo.htmlacademy.ru">
 
-          <fieldset class="feedback-form__fieldset">
+          <div class="feedback-form__fieldset">
             <legend class="feedback-form__legend text text--title">Представьтесь:</legend>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
@@ -64,23 +64,25 @@
                 <input class="feedback-form__input" type="text" name="fathername" id="fathername" placeholder="Александрович">
               </li>
             </ul>
-          </fieldset>
+          </div>
 
-          <fieldset class="feedback-form__fieldset">
+          <div class="feedback-form__fieldset">
             <legend class="feedback-form__legend text text--title">Контактная информация:</legend>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
                 <label class="feedback-form__label" for="phone">Контактный телефон*:</label>
                 <input class="feedback-form__input" type="phone" name="phone" id="phone" placeholder="Введите телефон" required>
+                <div class="feedback-form__phone"></div>
               </li>
               <li class="feedback-form__item">
                 <label class="feedback-form__label" for="email">Электронная почта*:</label>
                 <input class="feedback-form__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+                <div class="feedback-form__mail"></div>
               </li>
             </ul>
-          </fieldset>
+          </div>
 
-          <fieldset class="feedback-form__fieldset">
+          <div class="feedback-form__fieldset">
             <legend class="feedback-form__legend text text--title">Ваше общее впечатление:</legend>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
@@ -88,22 +90,24 @@
                 <label class="feedback-form__radio-label" for="good">Скорее положительное</label>
               </li>
               <li class="feedback-form__item">
-                <input class="feedback-form__radio-input" type="radio" name="radio" id="bad">
+                <input class="visually-hidden feedback-form__radio-input" type="radio" name="radio" id="bad">
                 <label class="feedback-form__radio-label" for="bad">Скорее отрицательное</label>
               </li>
               <li class="feedback-form__item">
-                <input class="feedback-form__radio-input" type="radio" name="radio" id="dontknow">
+                <input class="visually-hidden feedback-form__radio-input" type="radio" name="radio" id="dontknow">
                 <label class="feedback-form__radio-label" for="dontknow">Затрудняюсь ответить</label>
               </li>
             </ul>
-          </fieldset>
+          </div>
 
-          <fieldset class="feedback-form__fieldset">
+          <div class="feedback-form__fieldset">
             <legend class="feedback-form__legend text text--title">Посещенные достопримечательности:</legend>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
-                <input class="feedback-form__checkbox-input" type="checkbox" name="bridge" id="bridge" checked>
-                <label class="feedback-form__checkbox-label" for="bridge">Мост дьявола</label>
+                <label class="feedback-form__checkbox-label" for="bridge">Мост дьявола
+                  <input class="feedback-form__checkbox-input" type="checkbox" name="bridge" id="bridge" checked>
+                  <span class="feedback-form__checkmark"></span>
+                </label>
               </li>
               <li class="feedback-form__item">
                 <input class="feedback-form__checkbox-input" type="checkbox" name="mountain" id="mountain" checked>
@@ -118,12 +122,12 @@
                 <label class="feedback-form__checkbox-label" for="rocks">Красные скалы</label>
               </li>
             </ul>
-          </fieldset>
+          </div>
 
-          <fieldset class="feedback-form__fieldset">
+          <div class="feedback-form__fieldset">
             <legend class="feedback-form__legend text text--title">Опишите свои эмоции</legend>
             <textarea class="feedback-form__textarea" name="message" id="message" placeholder="Опишите подробно все свои восторги"></textarea>
-          </fieldset>
+          </div>
 
           <button class="button" type="submit">
             <span class="feedback-form__button">Отправить отзыв</span>
