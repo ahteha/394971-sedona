@@ -49,19 +49,22 @@
         <form class="feedback-form__body" method="get" action="https://echo.htmlacademy.ru">
 
           <div class="feedback-form__fieldset">
-            <legend class="feedback-form__legend text text--title">Представьтесь:</legend>
+            <legend class="text text--title feedback-form__legend">Представьтесь:</legend>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
-                <label class="feedback-form__label" for="name">Имя*:</label>
-                <input class="feedback-form__input" type="text" name="name" id="name" placeholder="Петр" required>
+                <label class="feedback-form__label" for="name">Имя*:
+                  <input class="feedback-form__input" type="text" name="name" id="name" placeholder="Петр" required>
+                </label>
               </li>
               <li class="feedback-form__item">
-                <label class="feedback-form__label" for="surname">Фамилия*:</label>
-                <input class="feedback-form__input" type="text" name="surname" id="surname" placeholder="Иванов" required>
+                <label class="feedback-form__label" for="surname">Фамилия*:
+                  <input class="feedback-form__input" type="text" name="surname" id="surname" placeholder="Иванов" required>
+                </label>
               </li>
               <li class="feedback-form__item">
-                <label class="feedback-form__label" for="fathername">Отчество:</label>
-                <input class="feedback-form__input" type="text" name="fathername" id="fathername" placeholder="Александрович">
+                <label class="feedback-form__label" for="fathername">Отчество:
+                  <input class="feedback-form__input" type="text" name="fathername" id="fathername" placeholder="Александрович">
+                </label>
               </li>
             </ul>
           </div>
@@ -83,43 +86,55 @@
           </div>
 
           <div class="feedback-form__fieldset">
-            <legend class="feedback-form__legend text text--title">Ваше общее впечатление:</legend>
+            <legend class="text text--title feedback-form__legend">Ваше общее впечатление:</legend>
             <ul class="feedback-form__list">
-              <li class="feedback-form__item">
-                <input class="feedback-form__radio-input" type="radio" name="radio" id="good" checked>
-                <label class="feedback-form__radio-label" for="good">Скорее положительное</label>
+              <li class="feedback-form__item radio">
+                <label class="radio__label" for="good">Скорее положительное
+                  <input class="radio__input" type="radio" name="radio" id="good" checked>
+                  <span class="radio__checkmark"></span>
+                </label>
               </li>
-              <li class="feedback-form__item">
-                <input class="visually-hidden feedback-form__radio-input" type="radio" name="radio" id="bad">
-                <label class="feedback-form__radio-label" for="bad">Скорее отрицательное</label>
+              <li class="feedback-form__item radio">
+                <label class="radio__label" for="bad">Скорее отрицательное
+                  <input class="radio__input" type="radio" name="radio" id="bad">
+                  <span class="radio__checkmark"></span>
+                </label>
               </li>
-              <li class="feedback-form__item">
-                <input class="visually-hidden feedback-form__radio-input" type="radio" name="radio" id="dontknow">
-                <label class="feedback-form__radio-label" for="dontknow">Затрудняюсь ответить</label>
+              <li class="feedback-form__item radio">
+                <label class="radio__label" for="dontknow">Затрудняюсь ответить
+                  <input class="radio__input" type="radio" name="radio" id="dontknow">
+                  <span class="radio__checkmark"></span>
+                </label>
               </li>
             </ul>
           </div>
 
           <div class="feedback-form__fieldset">
-            <legend class="feedback-form__legend text text--title">Посещенные достопримечательности:</legend>
+            <legend class="text text--title feedback-form__legend">Посещенные достопримечательности:</legend>
             <ul class="feedback-form__list">
-              <li class="feedback-form__item">
-                <label class="feedback-form__checkbox-label" for="bridge">Мост дьявола
-                  <input class="feedback-form__checkbox-input" type="checkbox" name="bridge" id="bridge" checked>
-                  <span class="feedback-form__checkmark"></span>
+              <li class="feedback-form__item checkbox">
+                <label class="checkbox__label" for="bridge">Мост дьявола
+                  <input class="checkbox__input" type="checkbox" name="bridge" id="bridge" checked>
+                  <span class="checkbox__checkmark"></span>
                 </label>
               </li>
-              <li class="feedback-form__item">
-                <input class="feedback-form__checkbox-input" type="checkbox" name="mountain" id="mountain" checked>
-                <label class="feedback-form__checkbox-label" for="mountain">Гора колокол</label>
+              <li class="feedback-form__item checkbox">
+                <label class="checkbox__label" for="mountain">Гора колокол
+                  <input class="checkbox__input" type="checkbox" name="mountain" id="mountain" checked>
+                  <span class="checkbox__checkmark"></span>
+                </label>
               </li>
-              <li class="feedback-form__item">
-                <input class="feedback-form__checkbox-input" type="checkbox" name="park" id="park" checked>
-                <label class="feedback-form__checkbox-label" for="park">Слайд-парк</label>
+              <li class="feedback-form__item checkbox">
+                <label class="checkbox__label" for="park">Слайд парк
+                  <input class="checkbox__input" type="checkbox" name="park" id="park" checked>
+                  <span class="checkbox__checkmark"></span>
+                </label>
               </li>
-              <li class="feedback-form__item">
-                <input class="feedback-form__checkbox-input" type="checkbox" name="rocks" id="rocks">
-                <label class="feedback-form__checkbox-label" for="rocks">Красные скалы</label>
+              <li class="feedback-form__item checkbox">
+                <label class="checkbox__label" for="rocks">Красные скалы
+                  <input class="checkbox__input" type="checkbox" name="rocks" id="rocks">
+                  <span class="checkbox__checkmark"></span>
+                </label>
               </li>
             </ul>
           </div>

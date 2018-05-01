@@ -1,0 +1,81 @@
+.radio {
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.radio__label {
+  display: block;
+  position: relative;
+  padding-left: 70px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: none;
+  user-select: none;
+}
+
+.radio__input {
+  position: absolute;
+  opacity: 0;
+}
+
+.radio__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 56px;
+  width: 56px;
+  background-color: $grey;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio__label:hover .radio__input ~ .radio__checkmark {
+  background-color: $grey-hover;
+}
+
+/* When the checkbox is checked, add a blue background */
+.radio__label .radio__input:checked ~ .radio__checkmark {
+  background-color: $grey-down;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.radio__checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.radio__label .radio__input:checked ~ .radio__checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.radio__label .radio__checkmark:after {
+  top: 16px;
+  left: 16px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #333333;
+}
+
+@media (min-width: $tablet-width) {
+  .radio {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .radio {
+    width: 100%;
+  }
+}

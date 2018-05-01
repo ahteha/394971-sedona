@@ -1,0 +1,81 @@
+.checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.checkbox__label {
+  display: block;
+  position: relative;
+  padding-left: 70px;
+  padding-top: 13px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.checkbox__input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 56px;
+  width: 56px;
+  border-radius: 4px;
+  background-color: $grey;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox__label:hover .checkbox__input ~ .checkbox__checkmark {
+  background-color: $grey-hover;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox__label .checkbox__input:checked ~ .checkbox__checkmark {
+  background-color: $grey-down;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox__checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox__label .checkbox__input:checked ~ .checkbox__checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox__label .checkbox__checkmark:after {
+  left: 15px;
+  top: 5px;
+  width: 19px;
+  height: 30px;
+  border: solid #333333;
+  border-width: 0 4px 4px 0;
+  transform: rotate(40deg);
+}
+
+@media (min-width: $tablet-width) {
+  .checkbox {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .checkbox {
+    width: 25%;
+  }
+}
