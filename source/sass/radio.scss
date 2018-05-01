@@ -47,19 +47,19 @@
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
-.radio__checkmark:after {
+.radio__checkmark::after {
   content: "";
   position: absolute;
   display: none;
 }
 
 /* Show the checkmark when checked */
-.radio__label .radio__input:checked ~ .radio__checkmark:after {
+.radio__label .radio__input:checked ~ .radio__checkmark::after {
   display: block;
 }
 
 /* Style the checkmark/indicator */
-.radio__label .radio__checkmark:after {
+.radio__label .radio__checkmark::after {
   top: 16px;
   left: 16px;
   width: 22px;

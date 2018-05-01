@@ -26,7 +26,7 @@
   .page-header__logo {
     position: absolute;
     left: 335px;
-    top: 0px;
+    top: 0;
     height: 85px;
   }
 }
@@ -43,9 +43,9 @@
   .page-header__logo {
     position: absolute;
     left: 505px;
-    top: 0px;
+    top: 0;
     height: 96px;
     width: 188px;
-    background-color: $blue
+    background-color: $blue;
   }
 }

@@ -46,19 +46,19 @@
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
-.checkbox__checkmark:after {
+.checkbox__checkmark::after {
   content: "";
   position: absolute;
   display: none;
 }
 
 /* Show the checkmark when checked */
-.checkbox__label .checkbox__input:checked ~ .checkbox__checkmark:after {
+.checkbox__label .checkbox__input:checked ~ .checkbox__checkmark::after {
   display: block;
 }
 
 /* Style the checkmark/indicator */
-.checkbox__label .checkbox__checkmark:after {
+.checkbox__label .checkbox__checkmark::after {
   left: 15px;
   top: 5px;
   width: 19px;
