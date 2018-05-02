@@ -1,3 +1,17 @@
+@font-face {
+  font-weight: normal;
+  font-family: "PT Sans";
+  font-style: normal;
+  src: url("fonts/ptsans.woff2") format("woff2"), url("fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "PT Sans";
+  font-style: normal;
+  src: url("fonts/ptsansbold.woff2") format("woff2"), url("fonts/ptsansbold.woff") format("woff");
+}
+
 body {
   min-width: 320px;
   margin: 0;
@@ -21,9 +35,7 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;

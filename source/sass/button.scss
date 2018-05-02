@@ -1,21 +1,28 @@
 .button {
-  width: 280px;
-  margin: 0 auto;
-  padding: 15px 0;
-  font-weight: bold;
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
   background-color: $blue;
   border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-down;
+  }
 }
 
-.button:hover,
-.button:focus {
-  background-color: $blue-hover;
-}
+.button__link {
+  height: 45px;
+  padding-top: 15px;
+  font-size: 21px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
 
-.button:active {
-  background-color: $blue-down;
+  &:active {
+    opacity: 0.3;
+  }
 }
