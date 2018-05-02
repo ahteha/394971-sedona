@@ -120,16 +120,16 @@
     }
 
     &:first-child {
-    margin-left: 50px;
-    margin-right: 75px;
+      margin-left: 50px;
+      margin-right: 75px;
     }
 
     &:nth-child(2) {
-    margin-right: 210px;
+      margin-right: 210px;
     }
 
     &:nth-child(3) {
-    margin-right: 50px;
+      margin-right: 50px;
     }
   }
 
@@ -149,7 +149,7 @@
     }
 
     &:active {
-    opacity: 0.3;
+      opacity: 0.3;
     }
   }
 
@@ -162,7 +162,7 @@
     }
 
     &:active {
-    opacity: 0.3;
+      opacity: 0.3;
     }
   }
 }
@@ -170,16 +170,16 @@
 @media (min-width: $desktop-width) {
   .main-nav__item {
     &:first-child {
-    margin-left: 90px;
-    margin-right: 162px;
+      margin-left: 90px;
+      margin-right: 162px;
     }
 
     &:nth-child(2) {
-    margin-right: 383px;
+      margin-right: 383px;
     }
 
     &:nth-child(3) {
-    margin-right: 137px;
+      margin-right: 137px;
     }
   }
 }
