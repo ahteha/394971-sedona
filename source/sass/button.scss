@@ -1,20 +1,28 @@
 .button {
-  display: block;
+  display: flex;
+  justify-content: space-around;
+  background-color: $blue;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-down;
+  }
+}
+
+.button__link {
   height: 45px;
   padding-top: 15px;
   font-size: 21px;
   text-align: center;
-  font-weight: bold;
   color: white;
-  background-color: $blue;
-}
+  font-weight: bold;
 
-.button:hover,
-.button:focus {
-  background-color: $blue-hover;
-}
-
-.button:active {
-  background-color: $blue-down;
-  opacity: 0.3;
+  &:active {
+    opacity: 0.3;
+  }
 }
