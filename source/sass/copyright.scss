@@ -1,0 +1,34 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.copyright__text {
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
+  margin-right: 8px;
+}
+
+.copyright__link {
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: auto;
+}
+
+.copyright__image {
+  fill: black;
+
+  &:hover,
+  &:focus {
+    fill: $blue;
+  }
+
+  &:active {
+    fill: black;
+    opacity: 0.3;
+  }
+}

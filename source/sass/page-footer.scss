@@ -4,16 +4,13 @@
   align-items: center;
   width: 320px;
   margin: 0 auto;
-  outline: 1px solid red;
 }
 
 .page-footer__title {
   margin: 0;
   padding: 0;
   font-size: 21px;
-  line-height: 26px;
-  margin-top: 35px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .page-footer__social {
@@ -22,31 +19,13 @@
 }
 
 .page-footer__copyright {
-  display: flex;
-  justify-content: center;
-  outline: 1px solid yellow;
-}
-
-.page-footer__copyright-text {
-  margin: 0;
-  padding: 0;
-}
-
-.page-footer__copyright-link {
-  margin: 0;
-  padding: 0;
-}
-
-.page-footer__copyright-image {
-  fill: black;
-  margin: 0;
-  padding: 0;
+  width: 320px;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
     flex-direction: row;
-    width: 648px;
+    width: $tablet-width;
     justify-content: space-between;
   }
 

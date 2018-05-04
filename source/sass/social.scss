@@ -1,3 +1,7 @@
+.social {
+  display: flex;
+}
+
 .social__list {
   margin: 0;
   padding: 0;
@@ -12,15 +16,15 @@
   width: 46px;
   height: 48px;
   background-color: $blue;
-}
 
-.social__item:hover,
-.social__item:focus {
-  background-color: $blue-hover;
-}
+  &:hover,
+  &:focus {
+    background-color: $blue-hover;
+  }
 
-.social__item:active {
-  background-color: $blue-down;
+  &:active {
+    background-color: $blue-down;
+  }
 }
 
 .social__link {
@@ -29,8 +33,8 @@
   padding-bottom: 10px;
   width: 100%;
   fill: white;
-}
 
-.social__link:active {
-  opacity: 0.3;
+  &:active {
+    opacity: 0.3;
+  }
 }
