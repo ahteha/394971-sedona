@@ -210,11 +210,11 @@
   .advantages__bridge {
     order: 2;
     width: 400px;
-    min-height: 260px;
+    padding-top: 55px;
   }
 
   .advantages__bridge-title {
-    width: 160px;
+    width: 151px;
   }
 
   .advantages__bridge-text {
@@ -223,13 +223,17 @@
 
   .advantages__grey {
     width: 400px;
+    padding-top: 43px;
+    padding-bottom: 40px;
+    border: none;
   }
 
   .advantages__grey-title {
     width: 135px;
+
   }
 
   .advantages__grey-text {
-    width: 300px;
+    width: 280px;
   }
 }

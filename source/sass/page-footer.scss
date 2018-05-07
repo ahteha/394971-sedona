@@ -24,22 +24,39 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    flex-direction: row;
     width: $tablet-width;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: flex-start;
   }
 
   .page-footer__title {
-    margin-top: 45px;
+    margin-top: 23px;
+    margin-left: 60px;
+    margin-right: 115px;
   }
 
   .page-footer__social {
-    margin-top: 40px;
+    margin-top: 35px;
+    margin-right: 110px;
+  }
+
+  .page-footer__copyright {
+    width: 150px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    width: 960px;
+    width: $desktop-width;
+  }
+
+  .page-footer__title {
+    margin-top: 30px;
+    margin-left: 120px;
+    margin-right: 268px;
+  }
+
+  .page-footer__social {
+    margin-right: 271px;
   }
 }

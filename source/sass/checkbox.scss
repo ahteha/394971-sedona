@@ -9,9 +9,9 @@
 .checkbox__label {
   display: block;
   position: relative;
-  padding-left: 70px;
-  padding-top: 13px;
-  margin-bottom: 15px;
+  padding-left: 80px;
+  padding-top: 8px;
+  margin-bottom: 24px;
   cursor: pointer;
   color: black;
   font-size: 18px;
@@ -27,7 +27,7 @@
 
 .checkbox__checkmark {
   position: absolute;
-  top: 0;
+  top: -5px;
   left: 0;
   height: 56px;
   width: 56px;
@@ -59,13 +59,13 @@
 
 /* Style the checkmark/indicator */
 .checkbox__label .checkbox__checkmark::after {
-  left: 15px;
-  top: 5px;
-  width: 19px;
-  height: 30px;
+  left: 22px;
+  top: 13px;
+  width: 10px;
+  height: 20px;
   border: solid #333333;
   border-width: 0 4px 4px 0;
-  transform: rotate(40deg);
+  transform: rotate(50deg);
 }
 
 @media (min-width: $tablet-width) {
