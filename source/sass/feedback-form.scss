@@ -112,7 +112,7 @@
   line-height: 26px;
   font-weight: bold;
   margin-top: -6px;
-  margin-bottom: 51px;
+  margin-bottom: 53px;
 
   &::placeholder {
     color: black;
@@ -129,9 +129,10 @@
 }
 
 .feedback-form__button {
-  height: 45px;
-  width: 270px;
-  padding-top: 15px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 42px;
+  padding-right: 42px;
   font-size: 21px;
   text-align: center;
   color: white;
@@ -141,6 +142,10 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.feedback-form__require {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -154,7 +159,7 @@
     width: 648px;
     margin: 0 auto;
     padding-top: 25px;
-    outline: 2px solid blue;
+    margin-bottom: 11px;
   }
 
   .feedback-form__fieldset {
@@ -166,31 +171,122 @@
     margin-bottom: 50px;
   }
 
-  .feedback-form__legend {
-    margin: 0;
-    padding: 0;
-    font-size: 21px;
-    margin-bottom: 60px;
-    outline: 2px solid green;
-  }
-
   .feedback-form__fieldset:first-child {
     width: 270px;
     margin-left: 380px;
   }
 
+  .feedback-form__fieldset:nth-child(2) .feedback-form__list {
+    width: 100%;
+  }
+
   .feedback-form__fieldset:nth-child(3) {
     width: 324px;
     position: absolute;
+    border-right: 1px solid $grey;
   }
 
   .feedback-form__fieldset:nth-child(4) .feedback-form__list {
-    width: 100%;
+    width: 80%;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 20px;
-    outline: 1px solid orange;
+    margin-left: 95px;
+  }
+
+  .feedback-form__fieldset:nth-child(4) .feedback-form__legend {
+    margin-top: -18px;
+    margin-left: 185px;
+    margin-bottom: 45px;
+    width: 280px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 130px;
+      height: 2px;
+      top: 25px;
+      left: -187px;
+      background: $grey;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 130px;
+      height: 2px;
+      top: 25px;
+      left: 340px;
+      background: $grey;
+    }
+  }
+
+  .feedback-form__fieldset:nth-child(5) .feedback-form__legend {
+    margin-top: -15px;
+    margin-left: 200px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 130px;
+      height: 2px;
+      top: 11px;
+      left: -200px;
+      background: $grey;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 130px;
+      height: 2px;
+      top: 11px;
+      left: 315px;
+      background: $grey;
+    }
+  }
+
+  .feedback-form__legend {
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+    margin-bottom: 60px;
+  }
+
+  .feedback-form__legend--contacts {
+    width: 648px;
+    margin-bottom: 25px;
+    padding: 0;
+  }
+
+  .feedback-form__label--contacts {
+    width: 648px;
+  }
+
+  .feedback-form__input--contacts {
+    margin-bottom: 10px;
+  }
+
+  .feedback-form__textarea {
+    width: 100%;
+    margin-bottom: 62px;
+  }
+
+  .feedback-form__require {
+    display: block;
+    margin-left: 160px;
+  }
+
+  .feedback-form__button {
+    padding-left: 65px;
+    padding-right: 65px;
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -201,10 +297,169 @@
 
   .feedback-form__body {
     width: 960px;
+    padding-top: 10px;
   }
 
   .feedback-form__fieldset:first-child {
     width: 400px;
     margin-left: 560px;
+    margin-bottom: 45px;
+  }
+
+  .feedback-form__fieldset:first-child .feedback-form__list {
+    width: 100%;
+  }
+
+  .feedback-form__fieldset:first-child .feedback-form__legend {
+    align-self: flex-start;
+  }
+
+  .feedback-form__fieldset:nth-child(2) .feedback-form__item:first-child {
+    width: 405px;
+    margin-right: 75px;
+  }
+
+  .feedback-form__fieldset:nth-child(2) .feedback-form__item:nth-child(2) {
+    width: auto;
+    margin-right: 0px;
+  }
+
+  .feedback-form__fieldset:nth-child(2) .feedback-form__legend {
+    margin-left: 155px;
+    margin-bottom: 75px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 280px;
+      height: 2px;
+      top: 10px;
+      left: -155px;
+      background: $grey;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 280px;
+      height: 2px;
+      top: 10px;
+      left: 525px;
+      background: $grey;
+    }
+  }
+
+  .feedback-form__fieldset:nth-child(2) .feedback-form__label {
+    width: auto;
+    margin-right: 20px;
+    margin-left: 0px;
+  }
+
+  .feedback-form__label--hide {
+    display: none;
+  }
+
+  .feedback-form__fieldset:nth-child(2) .feedback-form__input {
+    width: 235px;
+    margin-right: 0px;
+    flex-grow: 0;
+    margin-left: 0px;
+    margin-bottom: 0;
+  }
+
+  .feedback-form__fieldset:nth-child(3) {
+    width: 480px;
+  }
+
+  .feedback-form__fieldset:nth-child(3) .feedback-form__legend {
+
+    margin-left: 80px;
+  }
+
+  .feedback-form__fieldset:nth-child(4) .feedback-form__list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+  }
+
+  .feedback-form__fieldset:nth-child(4) .feedback-form__item {
+    width: auto;
+  }
+
+  .feedback-form__fieldset:nth-child(4) .feedback-form__item:first-child {
+    margin-right: 70px;
+  }
+
+  .feedback-form__fieldset:nth-child(4) .feedback-form__item:nth-child(2) {
+    margin-right: 75px;
+  }
+
+  .feedback-form__fieldset:nth-child(4) .feedback-form__item:nth-child(3) {
+    margin-right: 70px;
+  }
+
+  .feedback-form__fieldset:nth-child(4) .feedback-form__legend {
+    margin-top: -18px;
+    margin-left: 340px;
+    margin-bottom: 45px;
+    width: 280px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 285px;
+      height: 2px;
+      top: 25px;
+      left: -340px;
+      background: $grey;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 285px;
+      height: 2px;
+      top: 25px;
+      left: 340px;
+      background: $grey;
+    }
+  }
+
+  .feedback-form__fieldset:nth-child(5) .feedback-form__legend {
+    margin-top: -15px;
+    margin-left: 355px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 285px;
+      height: 2px;
+      top: 11px;
+      left: -355px;
+      background: $grey;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 285px;
+      height: 2px;
+      top: 11px;
+      left: 320px;
+      background: $grey;
+    }
+  }
+
+  .feedback-form__button {
+    width: 340px;
+  }
+
+  .feedback-form__require {
+    display: block;
+    margin-left: 315px;
   }
 }

@@ -70,8 +70,8 @@
             <legend class="feedback-form__legend feedback-form__legend--contacts">Контактная информация:</legend>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
-                <label class="feedback-form__label feedback-form__label--contacts" for="phone">Контактный телефон*:</label>
-                <input class="feedback-form__input" type="phone" name="phone" id="phone" placeholder="Введите телефон" required>
+                <label class="feedback-form__label feedback-form__label--contacts" for="phone"><span class="feedback-form__label--hide">Контактный</span> телефон*:</label>
+                <input class="feedback-form__input feedback-form__input--contacts" type="phone" name="phone" id="phone" placeholder="Введите телефон" required>
                 <div class="feedback-form__phone"></div>
               </li>
               <li class="feedback-form__item">
@@ -137,11 +137,12 @@
           </div>
 
           <div class="feedback-form__fieldset">
-            <legend class="feedback-form__legend">Опишите свои эмоции</legend>
+            <legend class="feedback-form__legend">Опишите свои эмоции:</legend>
             <textarea class="feedback-form__textarea" name="message" id="message" placeholder="Опишите подробно все свои восторги"></textarea>
             <button class="button" type="submit">
             <span class="feedback-form__button">Отправить отзыв</span>
-          </button>
+            </button>
+            <span class="feedback-form__require">* — Обязательные поля</span>
           </div>
         </form>
       </section>
