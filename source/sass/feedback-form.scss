@@ -321,7 +321,7 @@
 
   .feedback-form__fieldset:nth-child(2) .feedback-form__item:nth-child(2) {
     width: auto;
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   .feedback-form__fieldset:nth-child(2) .feedback-form__legend {
@@ -353,7 +353,7 @@
   .feedback-form__fieldset:nth-child(2) .feedback-form__label {
     width: auto;
     margin-right: 20px;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .feedback-form__label--hide {
@@ -362,9 +362,9 @@
 
   .feedback-form__fieldset:nth-child(2) .feedback-form__input {
     width: 235px;
-    margin-right: 0px;
+    margin-right: 0;
     flex-grow: 0;
-    margin-left: 0px;
+    margin-left: 0;
     margin-bottom: 0;
   }
 
