@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   width: 280px;
   align-items: flex-start;
-  padding-bottom: 13px;
+  padding-bottom: 10px;
 }
 
 .radio__label {
@@ -41,7 +41,7 @@
 
 /* When the checkbox is checked, add a blue background */
 .radio__label .radio__input:checked ~ .radio__checkmark {
-  background-color: $grey-down;
+  background-color: $grey;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -58,8 +58,8 @@
 
 /* Style the checkmark/indicator */
 .radio__label .radio__checkmark::after {
-  top: 16px;
-  left: 16px;
+  top: 17px;
+  left: 17px;
   width: 22px;
   height: 22px;
   border-radius: 50%;
@@ -69,6 +69,7 @@
 @media (min-width: $tablet-width) {
   .radio {
     width: 100%;
+    padding-bottom: 19px;
   }
 }
 

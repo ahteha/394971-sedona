@@ -3,7 +3,6 @@
   flex-wrap: wrap;
   width: 280px;
   align-items: flex-start;
-  margin-bottom: 20px;
 }
 
 .checkbox__label {
@@ -11,7 +10,7 @@
   position: relative;
   padding-left: 80px;
   padding-top: 8px;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
   cursor: pointer;
   color: black;
   font-size: 18px;
@@ -42,7 +41,7 @@
 
 /* When the checkbox is checked, add a blue background */
 .checkbox__label .checkbox__input:checked ~ .checkbox__checkmark {
-  background-color: $grey-down;
+  background-color: $grey;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -71,6 +70,11 @@
 @media (min-width: $tablet-width) {
   .checkbox {
     width: 50%;
+  }
+
+  .checkbox__label {
+    padding-top: 13px;
+    margin-bottom: 30px;
   }
 }
 

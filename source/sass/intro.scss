@@ -11,23 +11,45 @@
   width: 320px;
   padding-top: 88px;
   padding-bottom: 87px;
-  background:
-    url("../img/bg-intro-triangle-mobile.svg") no-repeat -7px 361px,
-    url("../img/bg-back-mobile@1x.jpg") no-repeat center #ffffff;
+  background-image:
+    url("../img/bg-intro-triangle-mobile.svg"),
+    url("../img/bg-back-mobile@1x.jpg");
   background-size:
     333px,
     cover;
+  background-repeat:
+    no-repeat,
+    no-repeat;
+  background-position:
+    -7px 361px,
+    center;
 }
 
 .intro__banner--inner {
   padding-top: 50px;
   padding-bottom: 67px;
-  background:
-    url("../img/bg-intro-triangle-mobile.svg") no-repeat -7px 131px,
-    url("../img/bg-back-mobile@1x.jpg") no-repeat center #ffffff;
+  background-image:
+    url("../img/bg-intro-triangle-mobile.svg"),
+    url("../img/bg-back-mobile@1x.jpg");
   background-size:
     333px,
     cover;
+  background-repeat:
+    no-repeat,
+    no-repeat;
+  background-position:
+    -7px 131px,
+    center;
+}
+
+.intro__image {
+  width: 280px;
+  height: auto;
+}
+
+.intro__image--inner {
+  width: 230px;
+  height: auto;
 }
 
 .intro__content {

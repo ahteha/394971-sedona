@@ -22,6 +22,15 @@
   border-top: 1px solid $grey;
 }
 
+.feedback-form__fieldset:nth-child(4) {
+  padding-bottom: 0;
+  margin-bottom: -4px;
+}
+
+.feedback-form__fieldset:nth-child(3) {
+  margin-bottom: 8px;
+}
+
 .feedback-form__legend {
   margin-bottom: 22px;
   font-size: 18px;
@@ -48,12 +57,12 @@
   display: flex;
   align-items: center;
   text-align: left;
-  margin-right: 15px;
+  margin-right: 14px;
 }
 
 .feedback-form__label--contacts {
   margin-left: 20px;
-  margin-top: -4px;
+  margin-top: -2px;
   margin-bottom: 6px;
 }
 
@@ -62,9 +71,9 @@
   flex-grow: 1;
   background-color: $grey;
   border: none;
-  padding-left: 18px;
+  padding-left: 22px;
   padding-top: 16px;
-  padding-bottom: 18px;
+  padding-bottom: 17px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -174,10 +183,25 @@
   .feedback-form__fieldset:first-child {
     width: 270px;
     margin-left: 380px;
+    margin-bottom: 48px;
+  }
+
+  .feedback-form__fieldset:first-child .feedback-form__legend {
+    align-self: flex-start;
+    margin-bottom: 57px;
+  }
+
+  .feedback-form__fieldset:first-child .feedback-form__item {
+    margin-bottom: 20px;
   }
 
   .feedback-form__fieldset:nth-child(2) .feedback-form__list {
     width: 100%;
+  }
+
+  .feedback-form__fieldset:nth-child(2) .feedback-form__legend {
+    align-self: flex-start;
+    margin-bottom: 25px;
   }
 
   .feedback-form__fieldset:nth-child(3) {
@@ -185,6 +209,11 @@
     position: absolute;
     border-right: 1px solid $grey;
   }
+
+  .feedback-form__fieldset:nth-child(4) {
+  padding-bottom: 0;
+  margin-bottom: 30px;
+}
 
   .feedback-form__fieldset:nth-child(4) .feedback-form__list {
     width: 80%;
@@ -226,6 +255,7 @@
   .feedback-form__fieldset:nth-child(5) .feedback-form__legend {
     margin-top: -15px;
     margin-left: 200px;
+    margin-bottom: 63px;
     position: relative;
 
     &::before {
@@ -312,16 +342,31 @@
 
   .feedback-form__fieldset:first-child .feedback-form__legend {
     align-self: flex-start;
+    margin-bottom: 55px;
+  }
+
+  .feedback-form__fieldset:nth-child(2) {
+    margin-bottom: 52px;
+  }
+
+  .feedback-form__fieldset:nth-child(2) .feedback-form__label {
+    padding-top: 8px;
   }
 
   .feedback-form__fieldset:nth-child(2) .feedback-form__item:first-child {
-    width: 405px;
-    margin-right: 75px;
+    width: 408px;
+    margin-right: 73px;
+  }
+
+  .feedback-form__fieldset:nth-child(2) .feedback-form__input {
+    padding-left: 17px;
+    width: 80px;
   }
 
   .feedback-form__fieldset:nth-child(2) .feedback-form__item:nth-child(2) {
     width: auto;
     margin-right: 0;
+
   }
 
   .feedback-form__fieldset:nth-child(2) .feedback-form__legend {
@@ -373,7 +418,7 @@
   }
 
   .feedback-form__fieldset:nth-child(3) .feedback-form__legend {
-
+    margin-bottom: 57px;
     margin-left: 80px;
   }
 
@@ -381,7 +426,7 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    margin-bottom: 5px;
+    margin-bottom: 16px;
   }
 
   .feedback-form__fieldset:nth-child(4) .feedback-form__item {
@@ -393,7 +438,7 @@
   }
 
   .feedback-form__fieldset:nth-child(4) .feedback-form__item:nth-child(2) {
-    margin-right: 75px;
+    margin-right: 70px;
   }
 
   .feedback-form__fieldset:nth-child(4) .feedback-form__item:nth-child(3) {
@@ -401,7 +446,7 @@
   }
 
   .feedback-form__fieldset:nth-child(4) .feedback-form__legend {
-    margin-top: -18px;
+    margin-top: -19px;
     margin-left: 340px;
     margin-bottom: 45px;
     width: 280px;
@@ -428,9 +473,15 @@
     }
   }
 
+  .feedback-form__fieldset:nth-child(5) {
+    flex-wrap: no-wrap;
+    margin-bottom: 54px;
+  }
+
   .feedback-form__fieldset:nth-child(5) .feedback-form__legend {
     margin-top: -15px;
     margin-left: 355px;
+    margin-bottom: 62px;
     position: relative;
 
     &::before {
@@ -452,6 +503,11 @@
       left: 320px;
       background: $grey;
     }
+  }
+
+  .feedback-form__textarea {
+    height: 125px;
+    margin-bottom: 55px;
   }
 
   .feedback-form__button {
