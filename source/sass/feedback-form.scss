@@ -211,9 +211,9 @@
   }
 
   .feedback-form__fieldset:nth-child(4) {
-  padding-bottom: 0;
-  margin-bottom: 30px;
-}
+    padding-bottom: 0;
+    margin-bottom: 30px;
+  }
 
   .feedback-form__fieldset:nth-child(4) .feedback-form__list {
     width: 80%;
@@ -350,6 +350,9 @@
   }
 
   .feedback-form__fieldset:nth-child(2) .feedback-form__label {
+    width: auto;
+    margin-right: 20px;
+    margin-left: 0;
     padding-top: 8px;
   }
 
@@ -361,12 +364,16 @@
   .feedback-form__fieldset:nth-child(2) .feedback-form__input {
     padding-left: 17px;
     width: 80px;
+    width: 235px;
+    margin-right: 0;
+    flex-grow: 0;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 
   .feedback-form__fieldset:nth-child(2) .feedback-form__item:nth-child(2) {
     width: auto;
     margin-right: 0;
-
   }
 
   .feedback-form__fieldset:nth-child(2) .feedback-form__legend {
@@ -395,22 +402,8 @@
     }
   }
 
-  .feedback-form__fieldset:nth-child(2) .feedback-form__label {
-    width: auto;
-    margin-right: 20px;
-    margin-left: 0;
-  }
-
   .feedback-form__label--hide {
     display: none;
-  }
-
-  .feedback-form__fieldset:nth-child(2) .feedback-form__input {
-    width: 235px;
-    margin-right: 0;
-    flex-grow: 0;
-    margin-left: 0;
-    margin-bottom: 0;
   }
 
   .feedback-form__fieldset:nth-child(3) {
