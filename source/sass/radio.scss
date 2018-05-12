@@ -3,16 +3,14 @@
   flex-wrap: wrap;
   width: 280px;
   align-items: flex-start;
-  margin-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .radio__label {
   display: block;
   position: relative;
-  padding-left: 70px;
+  padding-left: 77px;
   padding-top: 15px;
-  padding-bottom: 15px;
-  margin-bottom: 10px;
   cursor: pointer;
   color: black;
   font-size: 18px;
@@ -28,8 +26,8 @@
 
 .radio__checkmark {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 2px;
+  left: 1px;
   height: 56px;
   width: 56px;
   background-color: $grey;
@@ -43,7 +41,7 @@
 
 /* When the checkbox is checked, add a blue background */
 .radio__label .radio__input:checked ~ .radio__checkmark {
-  background-color: $grey-down;
+  background-color: $grey;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -60,8 +58,8 @@
 
 /* Style the checkmark/indicator */
 .radio__label .radio__checkmark::after {
-  top: 16px;
-  left: 16px;
+  top: 17px;
+  left: 17px;
   width: 22px;
   height: 22px;
   border-radius: 50%;
@@ -71,6 +69,7 @@
 @media (min-width: $tablet-width) {
   .radio {
     width: 100%;
+    padding-bottom: 19px;
   }
 }
 
