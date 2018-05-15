@@ -32,20 +32,18 @@
   z-index: 10;
   margin-bottom: 28px;
 
-  &:after {
+  &::after {
     position: absolute;
     z-index: 100;
-    content: '';
+    content: "";
     width: 20px;
     height: 20px;
     top: 10px;
     right: 10px;
     background-color: red;
-    background: url("../img/icon-map-marker.svg") repeat;
+    background-image: url("../img/icon-map-marker.svg") repeat;
   }
 }
-
-
 
 @media (min-width: $tablet-width) {
   .contacts {
