@@ -47,7 +47,7 @@
   height: auto;
 }
 
-.video__controls {
+.video__track {
   display: flex;
   flex-wrap: wrap;
   position: absolute;
@@ -57,7 +57,7 @@
   opacity: 0.6;
 }
 
-.video__seekbar {
+.video__track-progress {
   position: relative;
   width: 280px;
   height: 45px;
@@ -87,36 +87,37 @@
 }
 
 
-.video__button {
+.video__track-button {
   height: 66px;
   border: none;
   background-color: $grey;
+  fill: #5c6870;
 
   &:hover,
   &:focus {
-    fill: black;
+    fill: #333333;
   }
 
   &:active {
-    fill: black;
+    fill: #333333;
     opacity: 0.3;
   }
 }
 
-.video__button--replay {
+.video__track-button--replay {
   padding-left: 24px;
   padding-right: 24px;
   margin-right: 100px;
 }
 
-.video__button--subtitles {
+.video__track-button--subtitles {
   padding-top: 5px;
   padding-left: 10px;
   padding-right: 10px;
   margin-right: 10px;
 }
 
-.video__button--fullscreen {
+.video__track-button--fullscreen {
   padding-top: 5px;
   padding-left: 10px;
   padding-right: 10px;
@@ -151,7 +152,7 @@
     height: 500px;
   }
 
-  .video__controls {
+  .video__track {
     flex-direction: row;
     top: 405px;
     background-color: black;
@@ -159,7 +160,7 @@
     height: 95px;
   }
 
-  .video__seekbar {
+  .video__track-progress {
     order: 2;
     height: 90px;
     width: 395px;
@@ -187,34 +188,25 @@
     }
   }
 
-  .video__button {
+  .video__track-button {
     height: 90px;
     fill: white;
-    background-color: black;
-
-    &:hover,
-    &:focus {
-      fill: white;
-    }
-
-    &:active {
-      fill: white;
-      opacity: 0.3;
-    }
+    background-color: #000000;
+    fill: #ffffff;
   }
 
-  .video__button--replay {
+  .video__track-button--replay {
     order: 1;
     padding-left: 35px;
     padding-right: 35px;
     margin: 0;
   }
 
-  .video__button--subtitles {
+  .video__track-button--subtitles {
     order: 3;
   }
 
-  .video__button--fullscreen {
+  .video__track-button--fullscreen {
     order: 4;
   }
 }
@@ -240,13 +232,13 @@
     height: 500px;
   }
 
-  .video__controls {
+  .video__track {
     top: 408px;
     width: 800px;
     height: 93px;
   }
 
-  .video__seekbar {
+  .video__track-progress {
     width: 545px;
     margin-right: 32px;
 
