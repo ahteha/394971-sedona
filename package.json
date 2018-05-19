@@ -16,6 +16,7 @@
     "gulp-posthtml": "^3.0.4",
     "gulp-rename": "^1.2.3",
     "gulp-sass": "4.0.x",
+    "gulp-svgo": "^1.5.4",
     "gulp-svgstore": "^6.1.1",
     "gulp-webp": "^3.0.0",
     "posthtml-include": "^1.1.0",

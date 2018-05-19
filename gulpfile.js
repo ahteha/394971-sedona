@@ -15,6 +15,13 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var run = require("run-sequence");
 var del = require("del");
+var svgo = require("gulp-svgo");
+
+gulp.task("svgo", function () {
+  return gulp.src("source/img/icon-*.svg")
+    .pipe(svgo())
+    .pipe(gulp.dest("source/img"));
+});
 
 gulp.task("clean", function () {
   return del("build");
