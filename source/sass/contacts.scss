@@ -29,21 +29,16 @@
 
 .contacts__map {
   position: relative;
-  z-index: 10;
   margin-bottom: 28px;
-
-  &::after {
-    position: absolute;
-    z-index: 100;
-    content: "";
-    width: 20px;
-    height: 20px;
-    top: 10px;
-    right: 10px;
-    background-color: red;
-    background-image: url("../img/icon-map-marker.svg") repeat;
-  }
 }
+
+.contacts__map-marker {
+  position: absolute;
+  top: 160px;
+  left: 145px;
+  opacity: 0.8;
+}
+
 
 @media (min-width: $tablet-width) {
   .contacts {
@@ -67,8 +62,12 @@
   }
 
   .contacts__map {
-    width: $tablet-width;
     margin-bottom: -6px;
+  }
+
+  .contacts__map-marker {
+    top: 164px;
+    left: 370px;
   }
 }
 
@@ -85,7 +84,8 @@
     margin-bottom: 65px;
   }
 
-  .contacts__map {
-    width: $desktop-width;
+  .contacts__map-marker {
+    top: 162px;
+    left: 586px;
   }
 }
