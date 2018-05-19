@@ -17,7 +17,7 @@ gulp.task("sprite", function () {
     .pipe(svgstore({
       inlineSvg: true
     }))
-    .pipe(rename("prite.svg"))
+    .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("source/img"));
 });
 
