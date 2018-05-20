@@ -16,6 +16,7 @@ var include = require("posthtml-include");
 var run = require("run-sequence");
 var del = require("del");
 var svgo = require("gulp-svgo");
+var htmlmin = require("gulp-htmlmin");
 
 gulp.task("svgo", function () {
   return gulp.src("source/img/icon-*.svg")
@@ -54,6 +55,7 @@ gulp.task("html", function() {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"));
 });
 

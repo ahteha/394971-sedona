@@ -22,7 +22,7 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding-top: 25px;
+  padding-top: 23px;
   border-top: 1px solid $grey;
 }
 
@@ -53,7 +53,7 @@
   text-transform: none;
   margin-top: 0;
   margin-left: 20px;
-  margin-bottom: 6px;
+  margin-bottom: 7px;
   width: 185px;
 }
 
@@ -62,7 +62,7 @@
   text-align: left;
   margin-left: 20px;
   margin-top: 0;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
   padding: 0;
   width: 185px;
 }
@@ -172,7 +172,7 @@
   .photos__item {
     position: relative;
     width: 400px;
-    height: 270px;
+    height: 267px;
   }
 
   .photos__item:first-child {
@@ -210,7 +210,7 @@
 
   .photos__item:first-child .photos__rate {
     margin-right: 20px;
-    margin-top: 28px;
+    margin-top: 27px;
   }
 
   .photos__item:nth-child(2) .photos__rate {

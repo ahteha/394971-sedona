@@ -87,4 +87,8 @@
   .inner-list__content {
     max-width: 290px;
   }
+
+  .inner-list__item:nth-child(2) .inner-list__text {
+    width: 270px;
+  }
 }

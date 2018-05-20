@@ -13,13 +13,6 @@
   margin-right: 8px;
 }
 
-.copyright__link {
-  margin: 0;
-  padding: 0;
-  width: 40px;
-  height: auto;
-}
-
 .copyright__icon {
   fill: #000000;
 
@@ -35,10 +28,6 @@
 
 @media (min-width: $desktop-width) {
   .copyright__text {
-    margin: 0;
-    padding: 0;
-    padding-left: 3px;
-    padding-top: 5px;
     margin-top: 11px;
     margin-right: 5px;
   }

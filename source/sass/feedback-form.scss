@@ -74,7 +74,7 @@
   padding-left: 22px;
   padding-top: 16px;
   padding-bottom: 17px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   font-weight: bold;
 
@@ -92,25 +92,16 @@
   }
 }
 
-.feedback-form__phone {
-  width: 60px;
-  height: 60px;
-  background-color: $grey-hover;
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
+.feedback-form__phone,
 .feedback-form__mail {
   width: 60px;
-  height: 60px;
+  height: 40px;
   background-color: $grey-hover;
-  background-image: url("../img/icon-mail.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  padding-top: 20px;
 }
 
 .feedback-form__textarea {
+  font: inherit;
   padding: 20px;
   padding-top: 17px;
   width: 240px;
@@ -142,7 +133,7 @@
   padding-bottom: 18px;
   padding-left: 42px;
   padding-right: 42px;
-  font-size: 21px;
+  font-size: 18px;
   text-align: center;
   color: white;
   font-weight: bold;
