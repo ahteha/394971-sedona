@@ -1,0 +1,131 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-header__logo {
+  position: relative;
+  width: 100px;
+}
+
+.page-header__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.page-header__toggle {
+  height: 58px;
+  position: relative;
+  align-self: flex-end;
+}
+
+.page-header__burger {
+  position: relative;
+  align-self: flex-end;
+  width: 70px;
+  height: 57px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+
+  &:hover,
+  &:active {
+    background-color: transparent;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 15px;
+    left: 26px;
+
+    width: 24px;
+    height: 4px;
+
+    background-color: $blue;
+    box-shadow: 0 9px 0 0 $blue, 0 18px 0 0 $blue;
+  }
+
+  &:active::before {
+    background-color: $blue;
+    box-shadow: 0 9px 0 0 $blue, 0 18px 0 0 $blue;
+  }
+}
+
+.page-header__burger--hide {
+  display: none;
+}
+
+.page-header__cross {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 26px;
+    right: 17px;
+
+    width: 28px;
+    height: 4px;
+
+    background-color: $blue;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: $blue;
+    opacity: 0.3;
+  }
+}
+
+.page-header__cross--hide {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: $tablet-width;
+  }
+
+  .page-header__image {
+    top: -57px;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: $desktop-width;
+  }
+
+  .page-header__logo {
+    width: 190px;
+  }
+}
