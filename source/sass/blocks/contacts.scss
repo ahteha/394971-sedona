@@ -22,6 +22,10 @@
   margin-bottom: 35px;
 }
 
+.contacts__text br {
+  display: none;
+}
+
 .contacts__button {
   width: 280px;
   margin-bottom: 49px;
@@ -54,6 +58,10 @@
   .contacts__text {
     width: 450px;
     margin-bottom: 42px;
+  }
+
+  .contacts__text br {
+    display: inline-block;
   }
 
   .contacts__button {

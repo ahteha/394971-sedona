@@ -34,6 +34,10 @@
   line-height: 21px;
 }
 
+.inner-list__text br {
+  display: none;
+}
+
 
 @media (min-width: $tablet-width) {
   .inner-list {
@@ -77,6 +81,10 @@
   .inner-list__item:nth-child(3) .inner-list__text {
     width: 155px;
   }
+
+  .inner-list__text br {
+    display: inline-block;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -93,7 +101,7 @@
   }
 
   .inner-list__item:nth-child(2) .inner-list__text {
-    width: 209px;
+    width: 215px;
     outline: 2px solid red;
   }
 
