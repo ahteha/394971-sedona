@@ -82,7 +82,7 @@
     flex-wrap: wrap;
     width: 648px;
     border: none;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
   }
 
   .photos__item {
@@ -167,6 +167,7 @@
 
   .photos__list {
     width: 100%;
+    margin-bottom: 5px;
   }
 
   .photos__item {
